@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">regression suite</th></tr>
+<tr><td><a href="#t0">regression</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">6</td><td class="num">169,145</td><td>regression</td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">regression suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">regression &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">com.orangehrmlive.demo.testsuite.LoginTest</td><td><a href="#m0">verifyThatTheLogoDisplayOnHomePage</a></td><td rowspan="1">1652218067686</td><td rowspan="1">3575</td></tr><tr class="failedeven"><td><a href="#m1">verifyUserShouldLogOutSuccessFully</a></td><td rowspan="1">1652218075606</td><td rowspan="1">43541</td></tr><tr class="failedeven"><td><a href="#m2">verifyUserShouldLoginSuccessFully</a></td><td rowspan="1">1652218123407</td><td rowspan="1">2496</td></tr><tr class="failedodd"><td rowspan="3">com.orangehrmlive.demo.testsuite.UserTest</td><td><a href="#m3">adminShouldAddUserSuccessFully</a></td><td rowspan="1">1652218131286</td><td rowspan="1">7098</td></tr><tr class="failedodd"><td><a href="#m4">searchTheUserCreatedAndVerifyIt</a></td><td rowspan="1">1652218151435</td><td rowspan="1">45398</td></tr><tr class="failedodd"><td><a href="#m5">verifyThatAdminShouldDeleteTheUserSuccessFully</a></td><td rowspan="1">1652218201405</td><td rowspan="1">29430</td></tr><tr><th colspan="4">regression &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.orangehrmlive.demo.testsuite.UserTest</td><td><a href="#m6">searchTheDeletedUserAndVerifyTheMessageNoRecordFound</a></td><td rowspan="1">1652218142662</td><td rowspan="1">4501</td></tr></tbody>
+</table>
+<h2>regression</h2><h3 id="m0">com.orangehrmlive.demo.testsuite.LoginTest#verifyThatTheLogoDisplayOnHomePage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	logo not Displayed expected [true] but found []
+	at com.orangehrmlive.demo.testsuite.LoginTest.verifyThatTheLogoDisplayOnHomePage(LoginTest.java:42)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.orangehrmlive.demo.testsuite.LoginTest#verifyUserShouldLogOutSuccessFully</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;logInPanelHeading&apos;]&quot;}
+  (Session info: chrome=101.0.4951.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
+System info: host: &apos;LAPTOP-B84FV6SC&apos;, ip: &apos;192.168.0.23&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ee2460d6b5d31b46a8e7df29dc800168, findElement {using=xpath, value=//div[@id=&apos;logInPanelHeading&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\shita\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53896}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53896/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ee2460d6b5d31b46a8e7df29dc800168
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy14.getText(Unknown Source)
+	at com.orangehrmlive.demo.utility.Utility.getTextFromElement(Utility.java:67)
+	at com.orangehrmlive.demo.pages.LoginPage.getTextLogInPanel(LoginPage.java:38)
+	at com.orangehrmlive.demo.testsuite.LoginTest.verifyUserShouldLogOutSuccessFully(LoginTest.java:51)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.orangehrmlive.demo.testsuite.LoginTest#verifyUserShouldLoginSuccessFully</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	Failed to login expected [Welcome] but found [Welcome Paul]
+	at com.orangehrmlive.demo.testsuite.LoginTest.verifyUserShouldLoginSuccessFully(LoginTest.java:32)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.orangehrmlive.demo.testsuite.UserTest#adminShouldAddUserSuccessFully</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	Failed to save expected [Successfully Saved] but found []
+	at com.orangehrmlive.demo.testsuite.UserTest.adminShouldAddUserSuccessFully(UserTest.java:43)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.orangehrmlive.demo.testsuite.UserTest#searchTheUserCreatedAndVerifyIt</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;tableWrapper&apos;]//tbody[1]/tr/td[2]/a&quot;}
+  (Session info: chrome=101.0.4951.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
+System info: host: &apos;LAPTOP-B84FV6SC&apos;, ip: &apos;192.168.0.23&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [46e83b866102402687ed82c77b8297f4, findElement {using=xpath, value=//div[@id=&apos;tableWrapper&apos;]//tbody[1]/tr/td[2]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\shita\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53992/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 46e83b866102402687ed82c77b8297f4
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy14.getText(Unknown Source)
+	at com.orangehrmlive.demo.utility.Utility.getTextFromElement(Utility.java:67)
+	at com.orangehrmlive.demo.pages.ViewSystemUserPage.getSearchResult(ViewSystemUserPage.java:85)
+	at com.orangehrmlive.demo.testsuite.UserTest.searchTheUserCreatedAndVerifyIt(UserTest.java:59)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.orangehrmlive.demo.testsuite.UserTest#verifyThatAdminShouldDeleteTheUserSuccessFully</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=101.0.4951.54)
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
+System info: host: &apos;LAPTOP-B84FV6SC&apos;, ip: &apos;192.168.0.23&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [00eb98cb7a0721bec4ec5ec6b1860aa8, clickElement {id=fb59e900-865a-4ee2-aa26-4a88257068b5}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\shita\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54025/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (00eb98cb7a0721bec4ec5ec6b1860aa8)] -&gt; xpath: //input[@id=&apos;dialogDeleteBtn&apos;]]
+Session ID: 00eb98cb7a0721bec4ec5ec6b1860aa8
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy14.click(Unknown Source)
+	at com.orangehrmlive.demo.utility.Utility.clickOnElement(Utility.java:56)
+	at com.orangehrmlive.demo.pages.ViewSystemUserPage.setDeleteRecordDialogueBoxOK(ViewSystemUserPage.java:65)
+	at com.orangehrmlive.demo.testsuite.UserTest.verifyThatAdminShouldDeleteTheUserSuccessFully(UserTest.java:82)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.orangehrmlive.demo.testsuite.UserTest#searchTheDeletedUserAndVerifyTheMessageNoRecordFound</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

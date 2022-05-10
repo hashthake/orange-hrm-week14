@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="regression"
+           tests="3"
+           failures="3"
+           errors="0"
+           skipped="0"
+           time="49.612">
+  <properties />
+            <testcase name="verifyUserShouldLogOutSuccessFully" time="43.541" classname="com.orangehrmlive.demo.testsuite.LoginTest">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;logInPanelHeading&apos;]&quot;}
+  (Session info: chrome=101.0.4951.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
+System info: host: &apos;LAPTOP-B84FV6SC&apos;, ip: &apos;192.168.0.23&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ee2460d6b5d31b46a8e7df29dc800168, findElement {using=xpath, value=//div[@id=&apos;logInPanelHeading&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\shita\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53896}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53896/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ee2460d6b5d31b46a8e7df29dc800168"
+              >
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='logInPanelHeading']"}
+  (Session info: chrome=101.0.4951.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'LAPTOP-B84FV6SC', ip: '192.168.0.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ee2460d6b5d31b46a8e7df29dc800168, findElement {using=xpath, value=//div[@id='logInPanelHeading']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\shita\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53896}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53896/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ee2460d6b5d31b46a8e7df29dc800168
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+  org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+  org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+  org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+  org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+  com.sun.proxy.$Proxy14.getText(Unknown Source)
+  com.orangehrmlive.demo.utility.Utility.getTextFromElement(Utility.java:67)
+  com.orangehrmlive.demo.pages.LoginPage.getTextLogInPanel(LoginPage.java:38)
+  com.orangehrmlive.demo.testsuite.LoginTest.verifyUserShouldLogOutSuccessFully(LoginTest.java:51)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.ArrayList.forEach(ArrayList.java:1249)
+  org.testng.TestRunner.privateRun(TestRunner.java:808)
+  org.testng.TestRunner.run(TestRunner.java:603)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+  org.testng.SuiteRunner.run(SuiteRunner.java:326)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+  org.testng.TestNG.runSuites(TestNG.java:1092)
+  org.testng.TestNG.run(TestNG.java:1060)
+  com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+  com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="verifyThatTheLogoDisplayOnHomePage" time="3.575" classname="com.orangehrmlive.demo.testsuite.LoginTest">
+                <failure type="java.lang.AssertionError"
+                  message="The following asserts failed:
+	logo not Displayed expected [true] but found []"
+              >
+<![CDATA[java.lang.AssertionError: The following asserts failed:
+	logo not Displayed expected [true] but found []
+  org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+  org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+  com.orangehrmlive.demo.testsuite.LoginTest.verifyThatTheLogoDisplayOnHomePage(LoginTest.java:42)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.ArrayList.forEach(ArrayList.java:1249)
+  org.testng.TestRunner.privateRun(TestRunner.java:808)
+  org.testng.TestRunner.run(TestRunner.java:603)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+  org.testng.SuiteRunner.run(SuiteRunner.java:326)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+  org.testng.TestNG.runSuites(TestNG.java:1092)
+  org.testng.TestNG.run(TestNG.java:1060)
+  com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+  com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="verifyUserShouldLoginSuccessFully" time="2.496" classname="com.orangehrmlive.demo.testsuite.LoginTest">
+                <failure type="java.lang.AssertionError"
+                  message="The following asserts failed:
+	Failed to login expected [Welcome] but found [Welcome Paul]"
+              >
+<![CDATA[java.lang.AssertionError: The following asserts failed:
+	Failed to login expected [Welcome] but found [Welcome Paul]
+  org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+  org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+  com.orangehrmlive.demo.testsuite.LoginTest.verifyUserShouldLoginSuccessFully(LoginTest.java:32)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.ArrayList.forEach(ArrayList.java:1249)
+  org.testng.TestRunner.privateRun(TestRunner.java:808)
+  org.testng.TestRunner.run(TestRunner.java:603)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+  org.testng.SuiteRunner.run(SuiteRunner.java:326)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+  org.testng.TestNG.runSuites(TestNG.java:1092)
+  org.testng.TestNG.run(TestNG.java:1060)
+  com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+  com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+  
+</testsuite>
